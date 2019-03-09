@@ -1,0 +1,78 @@
+TCP
+  20/TCP -> FTP-Data : Puerto de datos FTP 
+  21/TCP -> FTP : Transferencia de archivos FTP
+  22/TCP -> SSH
+         |-> SFTP : SSH + FTP -> 115/TCP
+         |-> SCP : Secure Copy
+  23/TCP -> Telnet
+  25/TCP -> SMTP : envio e-mail
+      |-> 26/TCP : Alternativa SMTP
+      |-> 2525/TCP : Alternativa SMTP
+  49/TCP -> TACAS & XTACAS 
+  53/TCP -> DNS : transferencia de zonas
+  63/TCP -> WHOIS++ : Servicios extendidos WHOIS
+  66/TCP -> ORACLE SQLNet : Acceso remoto entre SW y BBDD ORACLE
+  80/TCP -> HTTP 
+  88/TCP -> Kerberos : Agente de Autenticación
+  107/TCP -> RTelnet : Telenet Remoto
+  110/TCP -> POP3 : buzón e-mail
+  115/TCP -> SFTP : SSH + FTP
+  139/TCP -> NetBIOS-ssn : Servicios de sesión NETBIOS usado por Samba
+  143/TCP -> IMAP4 : buzón e-mail
+  196/TCP -> IRC : Internet Relay Chat
+  389/TCP -> LDAP : Acceso ligero a Bases de Datos
+  443/TCP -> HTTPS : HTTP+SSL o HTTP+TLS
+  445/TCP -> SMB : Server Message Block
+  465/TCP -> SMTPS : SMTP + SSL
+  587/TCP -> SMTPS : SMTP + TLS
+  636/TCP -> LDAPS : LDAP + SSL/TLS
+  990/TCP -> FTPS : FTP + SSL/TLS
+  993/TCP -> IMAP4S IMAP4 + SSL/TLS
+  994/TCP -> IRCS : IRC + SSL/TLS
+  995/TCP -> POP3S : POP3 + SSL/TLS
+  3128/TCP -> SQUID : Caché web proxy SQUID
+  3306/TCP -> MySQL
+  3398/TCP -> RDP : Remote Desktop Protocol
+  4662/TCP -> eMule
+  5400/TCP -> VNC : Escritorio remoto sobre HTTP
+  5432/TCP -> Postgres : BBDD PostgreSQL
+  5500/TCP -> VNC : Escritorio remoto sobre HTTP
+  5600/TCP -> VNC : Escritorio remoto sobre HTTP
+  5700/TCP -> VNC : Escritorio remoto sobre HTTP
+  5800/TCP -> VNC : Escritorio remoto sobre HTTP
+  5900/TCP -> VNC : Escritorio remoto (conexión normal)
+  6881/TCP -> BitTorrent : Puerto por defecto
+  6969/TCP -> BitTorrent : Tracker
+  8080/TCP -> HTTP-ALT : Alternativa puerto 80 HTTP - TOMCAT
+  8118/TCP -> Privoxy
+  19226/TCP -> PandaSecurity : Comunicaciones del Agente de Panda Security
+  25565/TCP -> Minecraft : Servidores del juego
+  41121/TCP -> TENTACLE : Protocolo de transferencia usado por Pandora FMS
+-----------
+  [Hosting]
+    2082/TCP -> Control Panel : GUI Hosting
+    2083/TCP -> Control Panel SSL : GUI Hosting por SSL
+    2086/TCP -> WHM : WebHost Manager
+    2087/TCP -> WHMS : WebHost Manager + SSL
+    2095/TCP -> WebMail
+    2096/TCP -> WebMail + SSL
+  
+
+UDP
+  49/UDP -> TACAS & XTACAS
+  53/UDP -> DNS : Resolución de nombres
+  67/UDP -> DHCP : Servidor DHCP
+  68/UDP -> DHCP : Cliente DHCP
+  69/UDP -> TFTP : FTP de archivos triviales, no requiere autenticación
+  123/UDP -> NTP : protocolo para la sincronización del tiempo
+  137/UDP -> NetBIOS-ns : Servicio de nombres NETBIOS en RedHat por Samba
+  138/UDP -> NetBIOS-dgm : Servicio de datagramas Netbios
+  161/UDP -> SNMP : control de dispositivos en la red
+  162/UDP -> SNMP-trap
+  1812/UDP -> RADIUS : Autenticación & Autorización
+  1813/UDP -> RADIUS : Accountability (Facturación)
+  4672/UDP -> eMule
+  
+  
+MALWARE
+  9898/TCP -> Dabber.A (Troyano/Virus)[2004]
